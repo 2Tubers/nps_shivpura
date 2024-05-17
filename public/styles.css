@@ -1,0 +1,419 @@
+body {
+  font-family: "EB Garamond", serif;
+  background-color: rgb(48, 19, 45);
+  color: white;
+}
+
+
+
+
+ 
+
+/* style the navbar */
+.navbar {
+  width: 100vw;
+  background-color: #0A2463;
+  padding: 2em 0;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  box-sizing: border-box;
+}
+.navbar h2{
+  font-size: 2em;
+  font-family: "EB Garamond", serif;
+  color: bisque;
+  font-weight: 900;
+ align-content: center;
+}
+
+.navbar img {
+  height: 26%;
+  width: 26%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 1em; */
+  margin-top: 0px;
+}
+.navbar > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-basis: auto;
+}
+
+.navbar a {
+  color: rgb(145, 228, 100);
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.navbar li a:hover {
+  background-color: #b53d3d;
+  color: black;
+  border-radius: 50%;
+}
+
+.home {
+  list-style: none;
+  display: none;
+  color:  #FFD700;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.about {
+  list-style: none;
+  display: none;
+  color:  #FFD700;;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.admission {
+  list-style: none;
+  display: none;
+  color:  #FFD700;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.learning {
+  list-style: none;
+  display: none;
+  color:  #FFD700;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.campus {
+  list-style: none;
+  display: none;
+  color:  #FFD700;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.contact {
+  list-style: none;
+  display: none;
+  color: #FFD700;
+  cursor: pointer;
+  padding: 0px;
+}
+
+/* style the about us */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 0px;
+}
+
+.content {
+  background-color: black;
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4em;
+  color: #eda74b;
+  margin-bottom: 20px;
+  font-family: "Dancing Script", cursive;
+}
+
+p {
+  font-size: 1.5em;
+  line-height: 1.6;
+}
+
+.content2 {
+  background-color: black;
+  padding: 20px;
+  color: aqua;
+}
+
+.row1 {
+  display: flex;
+  margin-right: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 6em;
+}
+
+.row1 h1 {
+  color: rgb(222, 159, 78);
+}
+
+.row {
+  display: inline-flex;
+  margin-right: 2rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-around;
+  gap: 6em;
+  flex-basis: auto;
+  gap: 2em;
+}
+
+.row h1 {
+  text-align: center;
+  color: whitesmoke;
+}
+
+/* style the home page */
+.content3 {
+  background-color: black;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+
+.notice-container {
+  background-color: #2d4968;
+  color: red;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 1em;
+  margin: 1em auto;
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+/* Animation Keyframes */
+@keyframes moveNotice {
+  0% {
+    transform: translateX(100%); 
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
+}
+.notice {
+  white-space: nowrap; 
+  font-size: 2em;
+  animation: moveNotice 20s linear infinite; 
+}
+
+
+
+.image-group {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  /* border: 2px solid red; */
+ width: 100%;
+ justify-content: space-around;
+  
+}
+
+.image-group img {
+  height: 30rem; 
+  width: auto; 
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.5s ease;
+}
+
+.image-group img.next {
+  transform: translateX(-100%);
+}
+
+.image-group img.previous {
+  transform: translateX(100%);
+}
+
+.content3 div {
+  transition: all 0.3s ease;
+  padding: 2%;
+}
+
+.content3 :hover {
+  transform: scale(1.1);
+}
+
+.content3 h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: rgb(87, 60, 237);
+}
+
+.content3 p{
+  font-size: 2em;
+}
+
+.e{
+  height: 18rem;
+  width: auto;
+}
+/* style the campus */
+.row2 {
+  display: flex;
+  margin-right: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-basis: auto;
+  gap: 2em;
+}
+
+/* style the admission */
+.content4 {
+  background-color: black;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+}
+.content h2{
+  color: rgb(87, 60, 237);
+  font-size: 3.5em;
+}
+.content4 h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: rgb(87, 60, 237);
+}
+
+.content4 .content h1:hover {
+  transform: scale(1.1);
+}
+
+.adp {
+  background-color: black;
+  padding: 0px;
+  margin: 0px;
+}
+
+.adp p {
+  width: 100%;
+  margin: auto;
+}
+.hamburger-button{
+  display: none;
+}
+/* media query for mobile */
+@media only screen and (max-width: 1080px) {
+  .navbar {
+      flex-direction: column; 
+      font-size: 1.5em; 
+      width: 100vw;
+      height: auto;
+  }
+  
+  .navbar img {
+      height: auto; 
+      width: 100%;
+  }
+  
+  .content, .content2, .content3, .content4 {
+      padding: 1em; 
+      flex-direction: column;
+  }
+
+  .row, .row1, .row2 {
+      flex-direction: column; 
+      gap: 1em; 
+  }
+
+  /* h1{
+      font-size: 2em; 
+  } */
+
+
+  .content h1{
+    font-size: 2em;
+  }
+
+ .content h2{
+  font-size: 2em;
+  color: #eda74b;
+ }
+
+  .content p{
+    font-size: 1.25em;
+  }
+
+  .content3 p{
+    font-size: 1.25em;
+  }
+  
+  .row1 h1{
+    font-size: 2em;
+  }
+  .row1 p{
+    font-size: 1.25em;
+  }
+
+  .row h1{
+    font-size: 1.35em;
+  }
+  .row p{
+    font-size: 1.25em;
+  }
+
+  .adp p{
+    font-size: 1.25em;
+  }
+  .content li{
+    font-size: 1.25em;
+  }
+  .content2 h1{
+    font-size: 1.95em;
+  }
+  
+  .image-group img {
+      height: auto; 
+      width: 90%;
+  }
+  
+  .notice {
+      font-size: 1.5em; 
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center; 
+}
+.navbar li {
+    padding: 8px 0; 
+}
+
+.hamburger-button {
+  display: block;
+  background-color: rgb(171, 122, 216);
+  border-color: rgb(171, 122, 216);
+  border-radius: 50%;
+  z-index: 999;
+}
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar ul.collapsed {
+    display: none; 
+}
+.content4 .content h1:hover {
+  transform: scale(1.0);
+}
+.content3 :hover {
+  transform: scale(1.0);
+}
+
+}
