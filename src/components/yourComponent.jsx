@@ -16,7 +16,7 @@ function SlidingImages() {
 
     useEffect(() => {
         const intervalId = setInterval(() => {
-            setStart(prevStart => (prevStart + 3) % images.length);
+            setStart(prevStart => (prevStart + 3) % 8);
         }, 3000);
 
         return () => clearInterval(intervalId);
